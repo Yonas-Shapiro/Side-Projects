@@ -4,19 +4,6 @@
 #include "sudokuHelper.h"
 
 
-// int main(int argc, char *argv[]){
-
-//     printf("%s\n", argv[1]);
-
-//     struct square *sqrs = readIn(argv[1]);
-//     printSudoku(sqrs);
-
-//     free(sqrs);
-
-//     return 0;
-// }
-
-
 int main(int argc, char *argv[]){
 
     // Ensure a file is provided.
@@ -38,8 +25,6 @@ int main(int argc, char *argv[]){
     // Success/error message
     if (solved) printSudoku(fileSquares);
     else printf("The sudoku has no solutions\n");
-
-    printSudoku(fileSquares);
 
     // Freeing the storage
     free(fileGroups);
